@@ -6,16 +6,31 @@
 	<dict>
 		<key>Resources/Assets.car</key>
 		<data>
-		rMAXBCZ7KedmgBK5lADeDAoopYE=
+		pewYgi9SEfrZqbfTj8/o/JWq0ks=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Resources/Assets.car</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			pewYgi9SEfrZqbfTj8/o/JWq0ks=
+			</data>
 			<key>hash2</key>
 			<data>
-			WQZZrVswapQ030k95NaNUGDk1Hm0xXuAjn5x1g+E0cc=
+			nwc2WEfR/Mm75a0ljDPfGUrp9OmYvMFGL92fGz4v8iU=
+			</data>
+		</dict>
+		<key>embedded.provisionprofile</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			C3QM00aMrIaJjoWySC4VbhPDTxc=
+			</data>
+			<key>hash2</key>
+			<data>
+			tBNxWLNX3KVpjr5vdX+AK87pGjMK3thJ0ExRe87LBnI=
 			</data>
 		</dict>
 	</dict>

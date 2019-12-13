@@ -6,11 +6,11 @@
 	<dict>
 		<key>Resources/AppIcon.icns</key>
 		<data>
-		QserGp/O3JMFpy2Ow+kJc9RAsZY=
+		kYUqXFJmDo4d0qDM50q3RoVoDOE=
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		zFdJdKvEjsmrCTA2xbHD1Nhy+qs=
+		pQUdxMGyEgUeTSRoQHHV/jfNBV0=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -22,23 +22,27 @@
 		</data>
 		<key>Resources/Base.lproj/Setting.storyboardc/Info.plist</key>
 		<data>
-		hYIY2ocwY6xGHUAxZgadYNBv1UY=
+		YljChoJD7FUYUUiGoHtgdH5H+XQ=
 		</data>
 		<key>Resources/Base.lproj/Setting.storyboardc/MainWindowController.nib</key>
 		<data>
-		U5zkIBxvYZ8pi8KQrkJJGHaG4bs=
+		5EQvaL3+P06gOZIoyLQzx+C1Ok4=
 		</data>
 		<key>Resources/Base.lproj/Setting.storyboardc/wh4-27-Obu-view-YiX-OB-987.nib</key>
 		<data>
-		Nwf+M1ELm32X3rXxVJnVW/w2yU4=
+		uH8wsZaARYHpVu+NfXwfOiEMlh0=
+		</data>
+		<key>Resources/CommitWindowController.nib</key>
+		<data>
+		ZGrv7SqNFSEMyVOQbtMT/osLKUs=
 		</data>
 		<key>Resources/QuestionViewController.nib</key>
 		<data>
-		nVSqxOilka+rAfGeZdkDE8/wmKA=
+		jsODPguKfbCugMxXmA2527VqLQ8=
 		</data>
 		<key>Resources/ResultWindowController.nib</key>
 		<data>
-		klKVD+7HKWynxFtzqXjehUNtpVk=
+		Uyamx9a+H4wo2f7CP3fl4Ss52m0=
 		</data>
 		<key>Resources/svn.app/bin/BuildStrings</key>
 		<data>
@@ -398,7 +402,7 @@
 		</data>
 		<key>Resources/svn.app/cmd/kill_process.sh</key>
 		<data>
-		m6syG/6nvfgjFDgMWSRy3Wqe7eY=
+		XJLoefYJqgB3cWU92QCfTEzisVE=
 		</data>
 		<key>Resources/svn.app/cmd/svn</key>
 		<data>
@@ -547,31 +551,31 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			8VD1h/DgXz7zaXovOMQJFPtj/QM=
+			AoTu2PRGmZJQXLuitVV+aePvMaM=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"f150f587f0e05f3ef3697a2f38c40914fb63fd03"</string>
+			<string>identifier "com.xujun.svn.FinderSync" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Fang Bao (27S8JF6NHQ)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>Resources/AppIcon.icns</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QserGp/O3JMFpy2Ow+kJc9RAsZY=
+			kYUqXFJmDo4d0qDM50q3RoVoDOE=
 			</data>
 			<key>hash2</key>
 			<data>
-			fXi+k/O9PpMbHZ9gUtfFsbj4dBmDJRs6XpE/nx4DR3o=
+			c4TbC2PV5g9aQZfN1B9QDa0Y0UVaVe0fOSs8be7Ikyw=
 			</data>
 		</dict>
 		<key>Resources/Assets.car</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zFdJdKvEjsmrCTA2xbHD1Nhy+qs=
+			pQUdxMGyEgUeTSRoQHHV/jfNBV0=
 			</data>
 			<key>hash2</key>
 			<data>
-			hzDPLDOIJmOjgBXBas6tid7OBynaJVqbUE/BQ5PnlRQ=
+			bZmTicjQDL9/8LV3LnrhfqyAHR7RTmdZf2qn9LlVqSQ=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/Info.plist</key>
@@ -600,55 +604,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hYIY2ocwY6xGHUAxZgadYNBv1UY=
+			YljChoJD7FUYUUiGoHtgdH5H+XQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			/cWwizMxtAdiM0hSlQu7w4+Cc7wTj4rG1m4XRCtxcNM=
+			g/Ddsr6Xd/4iEEBHGHp+mhtrvs9Y5lPBsrCifJ1KRSU=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Setting.storyboardc/MainWindowController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			U5zkIBxvYZ8pi8KQrkJJGHaG4bs=
+			5EQvaL3+P06gOZIoyLQzx+C1Ok4=
 			</data>
 			<key>hash2</key>
 			<data>
-			9K2SVSwH2qlPE3rMRuKTnXeGdK4wwJydkgpR/nzG41U=
+			yfjPJ5GUQclad6wV9mYRbQ/TY9jjZHAdda0/hfOa9qE=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Setting.storyboardc/wh4-27-Obu-view-YiX-OB-987.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Nwf+M1ELm32X3rXxVJnVW/w2yU4=
+			uH8wsZaARYHpVu+NfXwfOiEMlh0=
 			</data>
 			<key>hash2</key>
 			<data>
-			qhm+oUhp68yy+4Ou/uftMviYyy8TmeiyThFbjAzG3Qw=
+			Gg5KEZesbAjkapetbI9AzMrLrMjNW6EbxaP1fTkEElQ=
+			</data>
+		</dict>
+		<key>Resources/CommitWindowController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZGrv7SqNFSEMyVOQbtMT/osLKUs=
+			</data>
+			<key>hash2</key>
+			<data>
+			ERw5KoE6f8doa5DIqcDuA/beoDBkBgEpuTW6sAdwgbY=
 			</data>
 		</dict>
 		<key>Resources/QuestionViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nVSqxOilka+rAfGeZdkDE8/wmKA=
+			jsODPguKfbCugMxXmA2527VqLQ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			MB+ifiwnZVCNaAySakwh2kPTzypjm3Lzy3O3TOH7h0Y=
+			MSpOix2M7tQZ1AuGE9NqZ318NkthdKPZj2e8QTbaSHY=
 			</data>
 		</dict>
 		<key>Resources/ResultWindowController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			klKVD+7HKWynxFtzqXjehUNtpVk=
+			Uyamx9a+H4wo2f7CP3fl4Ss52m0=
 			</data>
 			<key>hash2</key>
 			<data>
-			i5tkYWAzCv68l2UtYdlu2JUnBs6JdKxVyJiQGQjOF+E=
+			2foJKCVjUhx2UJhqvqKhzJ9BUkFFaeeJkvXQlIl0IXM=
 			</data>
 		</dict>
 		<key>Resources/svn.app/bin/BuildStrings</key>
@@ -1644,11 +1659,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m6syG/6nvfgjFDgMWSRy3Wqe7eY=
+			XJLoefYJqgB3cWU92QCfTEzisVE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ydaslpJw0H/geUXrWTlF4GjppUDtaifQkkIBpXFwUKA=
+			AaELdSKizz2QO9PXg0u/RrTU+UH911KRTtNrAVPkQTI=
 			</data>
 		</dict>
 		<key>Resources/svn.app/cmd/svn</key>
@@ -2109,6 +2124,17 @@
 			<key>hash2</key>
 			<data>
 			mMnxlhnJNMeY6fL9ZvWQsG8CTl/t7Ys2Br6j9tOi3ls=
+			</data>
+		</dict>
+		<key>embedded.provisionprofile</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			C3QM00aMrIaJjoWySC4VbhPDTxc=
+			</data>
+			<key>hash2</key>
+			<data>
+			tBNxWLNX3KVpjr5vdX+AK87pGjMK3thJ0ExRe87LBnI=
 			</data>
 		</dict>
 	</dict>

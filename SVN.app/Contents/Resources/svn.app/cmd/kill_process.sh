@@ -4,7 +4,7 @@
 #  SVN
 #
 #  Created by xujun on 2018/5/14.
-#  Copyright © 2018年 xujun. All rights reserved.
+#  Copyright © 2018年 apple. All rights reserved.
 
 
 #根据进程名杀死进程
