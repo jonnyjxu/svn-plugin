@@ -1,0 +1,14 @@
+#!/bin/sh
+
+#  .sh
+#  xujun
+#
+#  Created by xujun on 10/9/15.
+
+
+
+
+
+
+PATH=$(/usr/bin/dirname $0)
+cd ${PATH}/../bin && ./MacSystem $@

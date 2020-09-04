@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CommitWindowController">
+            <connections>
+                <outlet property="commitTextField" destination="gGQ-Ji-qNP" id="nM7-VK-jct"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="提交日志(可为空)" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="732" y="500" width="382" height="146"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <value key="minSize" type="size" width="382" height="146"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gGQ-Ji-qNP">
+                        <rect key="frame" x="15" y="34" width="352" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="9ww-fV-bW0"/>
+                            <constraint firstAttribute="height" constant="100" id="Dxr-qz-79q"/>
+                        </constraints>
+                        <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="请输入提交日志(可以为空)" drawsBackground="YES" id="RLs-fS-CcK">
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Owa-eg-wiR">
+                        <rect key="frame" x="293" y="1" width="80" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="0B4-GF-jac"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="SNi-Fs-JQs"/>
+                            <constraint firstAttribute="height" constant="21" id="f3E-BF-oME"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="gGh-el-rn1"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="提交" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fTH-Ok-jXX">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="clickCommitButton:" target="-2" id="dQS-8l-7fq"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="x67-Xj-vK2">
+                        <rect key="frame" x="215" y="1" width="80" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="NCK-x3-w8p"/>
+                            <constraint firstAttribute="height" constant="21" id="zTh-cR-04w"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wPR-mz-k7j">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="clickCancelButton:" target="-2" id="5Os-Wf-Pu9"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Owa-eg-wiR" secondAttribute="bottom" constant="8" id="2IF-PK-SzZ"/>
+                    <constraint firstItem="gGQ-Ji-qNP" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="8" id="GGd-zk-NX2"/>
+                    <constraint firstItem="x67-Xj-vK2" firstAttribute="centerY" secondItem="Owa-eg-wiR" secondAttribute="centerY" id="K3I-FJ-D2B"/>
+                    <constraint firstItem="Owa-eg-wiR" firstAttribute="top" secondItem="gGQ-Ji-qNP" secondAttribute="bottom" constant="5" id="Loi-OZ-YV4"/>
+                    <constraint firstItem="Owa-eg-wiR" firstAttribute="leading" secondItem="x67-Xj-vK2" secondAttribute="trailing" constant="10" id="N7I-tx-vSe"/>
+                    <constraint firstItem="Owa-eg-wiR" firstAttribute="top" secondItem="gGQ-Ji-qNP" secondAttribute="bottom" constant="5" id="RrO-Aj-4Fz"/>
+                    <constraint firstAttribute="trailing" secondItem="Owa-eg-wiR" secondAttribute="trailing" constant="15" id="c1z-hv-5vo"/>
+                    <constraint firstItem="gGQ-Ji-qNP" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="15" id="c8g-iI-UOw"/>
+                    <constraint firstAttribute="trailing" secondItem="gGQ-Ji-qNP" secondAttribute="trailing" constant="15" id="qgz-qv-Jye"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="82" y="159"/>
+        </window>
+    </objects>
+</document>

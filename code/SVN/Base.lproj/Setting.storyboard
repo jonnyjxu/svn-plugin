@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="ae2-W0-kKC">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14868"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="RNx-G2-IKk">
+            <objects>
+                <windowController storyboardIdentifier="MainWindowController" id="ae2-W0-kKC" customClass="MainWindowController" sceneMemberID="viewController">
+                    <window key="window" title="偏好设置" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="gUY-Aw-yhF">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="819" y="499" width="400" height="300"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+                        <toolbar key="toolbar" implicitIdentifier="B03A6576-5B86-49A9-A4B2-59F63EF36A48" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconAndLabel" sizeMode="regular" id="bRL-Xx-Pdr">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="4011D04E-A400-4B8F-9E77-77E3F37718F2" label="设置" paletteLabel="设置" tag="-1" image="setting" id="oiy-3i-vZ7">
+                                    <connections>
+                                        <action selector="pressSystemSettingAction:" target="ae2-W0-kKC" id="uxI-nU-azj"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="0214341C-0448-4902-BC90-9B4FB0B5833F" label="帮助" paletteLabel="帮助" tag="-1" image="info" id="MEd-2p-fcz">
+                                    <connections>
+                                        <action selector="pressSystemSettingAction:" target="ae2-W0-kKC" id="Hdv-QP-VEY"/>
+                                        <segue destination="dB1-Wa-UzB" kind="popover" popoverAnchorView="MEd-2p-fcz" popoverBehavior="t" preferredEdge="maxY" id="ylM-nA-YxK"/>
+                                    </connections>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="oiy-3i-vZ7"/>
+                                <toolbarItem reference="MEd-2p-fcz"/>
+                            </defaultToolbarItems>
+                            <connections>
+                                <outlet property="delegate" destination="ae2-W0-kKC" id="m0v-40-RNH"/>
+                            </connections>
+                        </toolbar>
+                        <connections>
+                            <outlet property="delegate" destination="ae2-W0-kKC" id="Euo-8r-m1i"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="wh4-27-Obu" kind="relationship" relationship="window.shadowedContentViewController" id="Sxr-LT-LqM"/>
+                    </connections>
+                </windowController>
+                <customObject id="hzA-bn-Qer" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-409" y="47"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="Pnu-VT-R6C">
+            <objects>
+                <viewController id="wh4-27-Obu" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" id="UCO-GZ-ADq">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LJ8-zm-8uO">
+                                <rect key="frame" x="150" y="245" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="qPy-6V-H6J"/>
+                                    <constraint firstAttribute="height" constant="30" id="wi9-du-JXA"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" title="打开系统插件扩展" bezelStyle="shadowlessSquare" image="setting" imagePosition="leading" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4nR-ND-RrR">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressSystemSettingAction:" target="wh4-27-Obu" id="tnO-66-yaB"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Egy-7h-gcU">
+                                <rect key="frame" x="13" y="250" width="124" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="3mL-Z3-Yrd"/>
+                                    <constraint firstAttribute="height" constant="20" id="Jqs-To-pL3"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="系统插件扩展" id="534-0U-7Yb">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VFe-YK-NnJ">
+                                <rect key="frame" x="13" y="200" width="124" height="20"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="开机启动" id="jd1-Zh-Ttw">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2CU-IA-JVh">
+                                <rect key="frame" x="13" y="150" width="124" height="20"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="网络监控" id="vvu-Sy-bT6">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BTL-xW-MEm">
+                                <rect key="frame" x="13" y="100" width="124" height="20"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="重启Finder" id="Dgj-rl-VXR">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vbj-0u-CGa">
+                                <rect key="frame" x="150" y="195" width="150" height="30"/>
+                                <buttonCell key="cell" type="square" title="打开" bezelStyle="shadowlessSquare" image="NSComputer" imagePosition="leading" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YEn-SU-Hxl">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressSettingLoginItemAction:" target="wh4-27-Obu" id="9xr-j7-SK1"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pog-Ly-djO">
+                                <rect key="frame" x="150" y="145" width="150" height="30"/>
+                                <buttonCell key="cell" type="square" title="打开" bezelStyle="shadowlessSquare" image="commit" imagePosition="leading" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DJj-Ji-Mb6">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressNetMoniterAction:" target="wh4-27-Obu" id="ggh-dr-RvS"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="W0q-Ly-bny">
+                                <rect key="frame" x="150" y="95" width="150" height="30"/>
+                                <buttonCell key="cell" type="square" title="重启Finder" bezelStyle="shadowlessSquare" image="discard" imagePosition="leading" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cok-VE-7Uv">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressRestartFinderAction:" target="wh4-27-Obu" id="bHf-VA-AXm"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="q8U-ec-pqv">
+                                <rect key="frame" x="313" y="246" width="25" height="25"/>
+                                <buttonCell key="cell" type="help" bezelStyle="helpButton" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nW1-Io-gYZ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressHelpItemButton:" target="wh4-27-Obu" id="L6m-lw-0cb"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gZ0-23-wtX">
+                                <rect key="frame" x="13" y="50" width="124" height="20"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="iOS定时打包" id="iEJ-oh-eZm">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="URq-oa-ATA">
+                                <rect key="frame" x="150" y="45" width="150" height="30"/>
+                                <buttonCell key="cell" type="square" title="打包配置" bezelStyle="shadowlessSquare" image="dir" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JJE-WW-249">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressRestartFinderAction:" target="wh4-27-Obu" id="rhf-TM-azS"/>
+                                    <segue destination="6rx-NA-vkT" kind="sheet" id="jix-ap-JUo"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C1a-Y0-AL3">
+                                <rect key="frame" x="313" y="46" width="25" height="25"/>
+                                <buttonCell key="cell" type="help" bezelStyle="helpButton" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QAp-FC-etd">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="eDL-7e-DDc" kind="popover" popoverAnchorView="C1a-Y0-AL3" popoverBehavior="t" preferredEdge="maxY" id="LIN-0W-cQ3"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6OK-04-lI2">
+                                <rect key="frame" x="313" y="146" width="25" height="25"/>
+                                <buttonCell key="cell" type="help" bezelStyle="helpButton" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SRr-kT-CH2">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="a7p-cZ-0CE" kind="popover" popoverAnchorView="6OK-04-lI2" popoverBehavior="t" preferredEdge="maxY" id="Zvd-yI-obT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="BTL-xW-MEm" firstAttribute="width" secondItem="Egy-7h-gcU" secondAttribute="width" id="3cM-Xo-GpL"/>
+                            <constraint firstItem="q8U-ec-pqv" firstAttribute="centerY" secondItem="LJ8-zm-8uO" secondAttribute="centerY" id="5qs-xe-Laq"/>
+                            <constraint firstItem="vbj-0u-CGa" firstAttribute="height" secondItem="LJ8-zm-8uO" secondAttribute="height" id="5sQ-Ag-HnY"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="W0q-Ly-bny" secondAttribute="trailing" constant="20" symbolic="YES" id="91n-8h-OGj"/>
+                            <constraint firstItem="Egy-7h-gcU" firstAttribute="top" secondItem="UCO-GZ-ADq" secondAttribute="top" constant="30" id="AXp-dT-IXP"/>
+                            <constraint firstItem="2CU-IA-JVh" firstAttribute="height" secondItem="Egy-7h-gcU" secondAttribute="height" id="DQm-Bm-W9E"/>
+                            <constraint firstItem="VFe-YK-NnJ" firstAttribute="top" secondItem="Egy-7h-gcU" secondAttribute="bottom" constant="30" id="Dhs-5s-3lg"/>
+                            <constraint firstItem="VFe-YK-NnJ" firstAttribute="height" secondItem="Egy-7h-gcU" secondAttribute="height" id="EIt-gH-Kev"/>
+                            <constraint firstItem="URq-oa-ATA" firstAttribute="height" secondItem="LJ8-zm-8uO" secondAttribute="height" id="FFr-E2-ba5"/>
+                            <constraint firstItem="C1a-Y0-AL3" firstAttribute="centerY" secondItem="URq-oa-ATA" secondAttribute="centerY" id="FVa-TA-Z89"/>
+                            <constraint firstItem="W0q-Ly-bny" firstAttribute="height" secondItem="LJ8-zm-8uO" secondAttribute="height" id="HR6-eD-j7M"/>
+                            <constraint firstItem="gZ0-23-wtX" firstAttribute="height" secondItem="Egy-7h-gcU" secondAttribute="height" id="LM0-8x-HEH"/>
+                            <constraint firstItem="LJ8-zm-8uO" firstAttribute="centerY" secondItem="Egy-7h-gcU" secondAttribute="centerY" id="Oln-eo-Inh"/>
+                            <constraint firstItem="URq-oa-ATA" firstAttribute="centerY" secondItem="gZ0-23-wtX" secondAttribute="centerY" id="QIK-QR-2Xq"/>
+                            <constraint firstItem="6OK-04-lI2" firstAttribute="leading" secondItem="pog-Ly-djO" secondAttribute="trailing" constant="15" id="RP8-Ie-YW1"/>
+                            <constraint firstItem="URq-oa-ATA" firstAttribute="width" secondItem="LJ8-zm-8uO" secondAttribute="width" id="RpD-Kg-oYj"/>
+                            <constraint firstItem="URq-oa-ATA" firstAttribute="leading" secondItem="LJ8-zm-8uO" secondAttribute="leading" id="Tad-xj-Dm3"/>
+                            <constraint firstItem="W0q-Ly-bny" firstAttribute="leading" secondItem="LJ8-zm-8uO" secondAttribute="leading" id="VHb-gp-Sfh"/>
+                            <constraint firstItem="gZ0-23-wtX" firstAttribute="top" secondItem="BTL-xW-MEm" secondAttribute="bottom" constant="30" id="WXk-il-Ewm"/>
+                            <constraint firstItem="VFe-YK-NnJ" firstAttribute="leading" secondItem="Egy-7h-gcU" secondAttribute="leading" id="X5P-AP-vRd"/>
+                            <constraint firstItem="vbj-0u-CGa" firstAttribute="centerY" secondItem="VFe-YK-NnJ" secondAttribute="centerY" id="XAN-he-hiT"/>
+                            <constraint firstItem="pog-Ly-djO" firstAttribute="leading" secondItem="LJ8-zm-8uO" secondAttribute="leading" id="YJD-j7-QIe"/>
+                            <constraint firstItem="pog-Ly-djO" firstAttribute="centerY" secondItem="2CU-IA-JVh" secondAttribute="centerY" id="Ybj-qX-9y1"/>
+                            <constraint firstItem="BTL-xW-MEm" firstAttribute="leading" secondItem="Egy-7h-gcU" secondAttribute="leading" id="bGk-aI-oea"/>
+                            <constraint firstItem="W0q-Ly-bny" firstAttribute="width" secondItem="LJ8-zm-8uO" secondAttribute="width" id="c5Y-AT-NqU"/>
+                            <constraint firstItem="W0q-Ly-bny" firstAttribute="centerY" secondItem="BTL-xW-MEm" secondAttribute="centerY" id="eJq-Up-mcR"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LJ8-zm-8uO" secondAttribute="trailing" constant="20" symbolic="YES" id="eeL-NJ-MFP"/>
+                            <constraint firstItem="q8U-ec-pqv" firstAttribute="leading" secondItem="LJ8-zm-8uO" secondAttribute="trailing" constant="15" id="epL-Va-O9x"/>
+                            <constraint firstItem="2CU-IA-JVh" firstAttribute="leading" secondItem="Egy-7h-gcU" secondAttribute="leading" id="h6K-yN-AED"/>
+                            <constraint firstItem="2CU-IA-JVh" firstAttribute="width" secondItem="Egy-7h-gcU" secondAttribute="width" id="kYl-aC-juR"/>
+                            <constraint firstItem="gZ0-23-wtX" firstAttribute="leading" secondItem="Egy-7h-gcU" secondAttribute="leading" id="lNH-fD-Pgq"/>
+                            <constraint firstItem="C1a-Y0-AL3" firstAttribute="leading" secondItem="URq-oa-ATA" secondAttribute="trailing" constant="15" id="msD-sq-EmZ"/>
+                            <constraint firstItem="2CU-IA-JVh" firstAttribute="top" secondItem="VFe-YK-NnJ" secondAttribute="bottom" constant="30" id="okq-Ub-vRY"/>
+                            <constraint firstItem="URq-oa-ATA" firstAttribute="leading" secondItem="gZ0-23-wtX" secondAttribute="trailing" constant="15" id="pVZ-PJ-szk"/>
+                            <constraint firstItem="pog-Ly-djO" firstAttribute="width" secondItem="LJ8-zm-8uO" secondAttribute="width" id="pbZ-DR-cSD"/>
+                            <constraint firstItem="vbj-0u-CGa" firstAttribute="width" secondItem="LJ8-zm-8uO" secondAttribute="width" id="qK5-SF-OWy"/>
+                            <constraint firstItem="VFe-YK-NnJ" firstAttribute="width" secondItem="Egy-7h-gcU" secondAttribute="width" id="qjW-Sb-JC9"/>
+                            <constraint firstItem="BTL-xW-MEm" firstAttribute="top" secondItem="2CU-IA-JVh" secondAttribute="bottom" constant="30" id="sZ1-PF-Jg6"/>
+                            <constraint firstItem="Egy-7h-gcU" firstAttribute="leading" secondItem="UCO-GZ-ADq" secondAttribute="leading" constant="15" id="sbG-HO-ihM"/>
+                            <constraint firstItem="6OK-04-lI2" firstAttribute="centerY" secondItem="pog-Ly-djO" secondAttribute="centerY" id="tPb-wq-Ijn"/>
+                            <constraint firstItem="LJ8-zm-8uO" firstAttribute="leading" secondItem="Egy-7h-gcU" secondAttribute="trailing" constant="15" id="ukX-7R-ciT"/>
+                            <constraint firstItem="gZ0-23-wtX" firstAttribute="width" secondItem="Egy-7h-gcU" secondAttribute="width" id="v4v-ze-Wwj"/>
+                            <constraint firstItem="pog-Ly-djO" firstAttribute="height" secondItem="LJ8-zm-8uO" secondAttribute="height" id="wT1-oa-rWM"/>
+                            <constraint firstItem="vbj-0u-CGa" firstAttribute="leading" secondItem="LJ8-zm-8uO" secondAttribute="leading" id="yJf-Zk-ZQh"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vbj-0u-CGa" secondAttribute="trailing" constant="20" symbolic="YES" id="zBf-EK-F73"/>
+                            <constraint firstItem="BTL-xW-MEm" firstAttribute="height" secondItem="Egy-7h-gcU" secondAttribute="height" id="zHk-i4-r3u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="vbj-0u-CGa" id="B2b-Pg-9E9"/>
+                        <outlet property="netMoniterButton" destination="pog-Ly-djO" id="dOa-O5-bbf"/>
+                    </connections>
+                </viewController>
+                <customObject id="wZr-5M-63f" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="-242"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a1d-um-Bzz">
+            <objects>
+                <viewController id="dB1-Wa-UzB" sceneMemberID="viewController">
+                    <view key="view" id="Ijf-gn-JNg">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="347"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tjN-gX-i5P">
+                                <rect key="frame" x="0.0" y="-39" width="480" height="341"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="guide2" id="Qae-cP-R5f"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LS0-LM-y8a">
+                                <rect key="frame" x="18" y="307" width="399" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="pHB-4e-Ga2">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <string key="title">打开系统偏好设置-扩展-勾选"svn插件"后, 点击重启Finder
+网络监控:当没有网络不可用的时候,会关闭wifi,然后再打开</string>
+                                    <color key="textColor" name="systemPinkColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="4g4-B7-GEl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250" y="744"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zcK-hg-lZI">
+            <objects>
+                <viewController id="a7p-cZ-0CE" sceneMemberID="viewController">
+                    <view key="view" id="ERJ-CF-2Y2">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Un-uz-vMY">
+                                <rect key="frame" x="40" y="43" width="399" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="iJc-Yx-yKf">
+                                    <font key="font" size="19" name=".PingFangSC-Regular"/>
+                                    <string key="title">当没有网络不可用的时候, 会关闭wifi, 然后再打开.
+
+附加功能 
+如果打开了TeamViewer, 会重启
+网络重试10次后, Droid4X 会关闭</string>
+                                    <color key="textColor" name="systemPinkColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="4XP-lT-UvP" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="-348"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MsB-Qk-Sar">
+            <objects>
+                <viewController id="eDL-7e-DDc" sceneMemberID="viewController">
+                    <view key="view" id="8zs-fX-P2O">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Qe-Q0-Idh">
+                                <rect key="frame" x="36" y="47" width="399" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="HEu-nA-vOu">
+                                    <font key="font" size="19" name=".PingFangSC-Regular"/>
+                                    <string key="title">每天23点会进行iOS测试包打包(周末不执行)
+
+附加功能 
+如果打开了TeamViewer, 会重启</string>
+                                    <color key="textColor" name="systemPinkColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="CzW-SU-MLE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="-90.5"/>
+        </scene>
+        <!--iOS Auto Build Config View Controller-->
+        <scene sceneID="DwK-TD-aG8">
+            <objects>
+                <viewController id="6rx-NA-vkT" customClass="IOSAutoBuildConfigViewController" sceneMemberID="viewController">
+                    <view key="view" id="uxj-Pr-FcW">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="160"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FF8-tn-1Ey">
+                                <rect key="frame" x="15" y="50" width="356" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="pOb-yN-Wpp"/>
+                                </constraints>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="打包脚本路径(空路径即代表不能执行)" drawsBackground="YES" id="eFQ-9d-Ckb">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0Mf-9u-O1N">
+                                <rect key="frame" x="386" y="100" width="79" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0fy-jl-d3W"/>
+                                    <constraint firstAttribute="width" constant="79" id="FNA-fh-ZqY"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" title="选择" bezelStyle="shadowlessSquare" image="dir" imagePosition="leading" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HAR-3r-iri">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressSelectPathButton:" target="6rx-NA-vkT" id="Os7-xb-gJo"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MGV-Ud-r0a">
+                                <rect key="frame" x="386" y="15" width="79" height="30"/>
+                                <buttonCell key="cell" type="square" title="保存" bezelStyle="shadowlessSquare" image="commit" imagePosition="leading" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uac-zD-ftl">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressSaveButton:" target="6rx-NA-vkT" id="zep-iT-GMV"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XdP-pw-qYQ">
+                                <rect key="frame" x="17" y="135" width="263" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="执行打包脚本路径(23点自动执行, 周末除外)" id="Iq4-RV-w62">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FF8-tn-1Ey" firstAttribute="leading" secondItem="uxj-Pr-FcW" secondAttribute="leading" constant="15" id="0Dv-y9-loz"/>
+                            <constraint firstItem="MGV-Ud-r0a" firstAttribute="trailing" secondItem="0Mf-9u-O1N" secondAttribute="trailing" id="78h-Om-DFf"/>
+                            <constraint firstAttribute="bottom" secondItem="MGV-Ud-r0a" secondAttribute="bottom" constant="15" id="8lQ-uT-Lv5"/>
+                            <constraint firstItem="0Mf-9u-O1N" firstAttribute="top" secondItem="FF8-tn-1Ey" secondAttribute="top" id="Qc5-vD-Ekj"/>
+                            <constraint firstItem="MGV-Ud-r0a" firstAttribute="width" secondItem="0Mf-9u-O1N" secondAttribute="width" id="ZzG-Sj-qcD"/>
+                            <constraint firstItem="FF8-tn-1Ey" firstAttribute="top" secondItem="uxj-Pr-FcW" secondAttribute="top" constant="30" id="jDy-Sf-qXr"/>
+                            <constraint firstItem="MGV-Ud-r0a" firstAttribute="height" secondItem="0Mf-9u-O1N" secondAttribute="height" id="qg3-PQ-wf5"/>
+                            <constraint firstAttribute="trailing" secondItem="0Mf-9u-O1N" secondAttribute="trailing" constant="15" id="tqh-QN-xpu"/>
+                            <constraint firstItem="0Mf-9u-O1N" firstAttribute="leading" secondItem="FF8-tn-1Ey" secondAttribute="trailing" constant="15" id="zzw-jY-JJy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="FF8-tn-1Ey" id="mKy-a5-j9k"/>
+                    </connections>
+                </viewController>
+                <customObject id="vfb-7t-9GT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808" y="242"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NSComputer" width="32" height="32"/>
+        <image name="commit" width="16" height="16"/>
+        <image name="dir" width="16" height="16"/>
+        <image name="discard" width="16" height="16"/>
+        <image name="guide2" width="1336" height="1014"/>
+        <image name="info" width="256" height="256"/>
+        <image name="setting" width="16" height="16"/>
+    </resources>
+</document>

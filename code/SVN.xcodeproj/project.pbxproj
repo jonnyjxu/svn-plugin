@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		950C165720A3E9A400D17957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 950C165520A3E9A300D17957 /* Main.storyboard */; };
+		950C165A20A3EA0500D17957 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 950C165920A3EA0500D17957 /* MainViewController.m */; };
+		950C165D20A3EA1900D17957 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 950C165C20A3EA1900D17957 /* MainWindowController.m */; };
+		950C166120A411DC00D17957 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 950C165F20A411DB00D17957 /* QuestionViewController.xib */; };
+		950C166220A411DC00D17957 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 950C166020A411DC00D17957 /* QuestionViewController.m */; };
+		950C166820A411F900D17957 /* SSNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 950C166620A411F800D17957 /* SSNotificationCenter.m */; };
+		950C166920A411F900D17957 /* SSPopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 950C166720A411F800D17957 /* SSPopManager.m */; };
+		950C166D20A414A400D17957 /* ResultWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 950C166B20A414A400D17957 /* ResultWindowController.m */; };
+		950C166E20A414A400D17957 /* ResultWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 950C166C20A414A400D17957 /* ResultWindowController.xib */; };
+		953315D72123C35F00F19C13 /* CommitWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 953315D52123C35F00F19C13 /* CommitWindowController.m */; };
+		953315D82123C35F00F19C13 /* CommitWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 953315D62123C35F00F19C13 /* CommitWindowController.xib */; };
+		953315DC2123C67D00F19C13 /* BaseWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 953315DB2123C67D00F19C13 /* BaseWindowController.m */; };
+		954AF702209AC0DD00EB484F /* FinderMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FBC1D32099648B00B682BE /* FinderMenuModel.m */; };
+		954E38E423CDD5B700652AFA /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 954E38DA23CDD5B700652AFA /* AFURLResponseSerialization.m */; };
+		954E38E523CDD5B700652AFA /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 954E38DB23CDD5B700652AFA /* AFHTTPSessionManager.m */; };
+		954E38E623CDD5B700652AFA /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 954E38DD23CDD5B700652AFA /* AFURLSessionManager.m */; };
+		954E38E723CDD5B700652AFA /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 954E38DE23CDD5B700652AFA /* AFURLRequestSerialization.m */; };
+		954E38E823CDD5B700652AFA /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 954E38E023CDD5B700652AFA /* AFNetworkReachabilityManager.m */; };
+		954E38E923CDD5B700652AFA /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 954E38E123CDD5B700652AFA /* AFSecurityPolicy.m */; };
+		9554A60520A54DCD000F17A6 /* svn.app in Resources */ = {isa = PBXBuildFile; fileRef = 95FBC2942099A3AE00B682BE /* svn.app */; };
+		959767A82477C318004CD14C /* IOSAutoBuildConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959767A72477C318004CD14C /* IOSAutoBuildConfigViewController.m */; };
+		959767AE2477E20B004CD14C /* NSDate+CategoryKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 959767AD2477E20B004CD14C /* NSDate+CategoryKit.m */; };
+		95B798CE20A596E6005350F5 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B798CC20A596E6005350F5 /* Setting.storyboard */; };
+		95FBC18820994E4000B682BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FBC18720994E4000B682BE /* AppDelegate.m */; };
+		95FBC18A20994E4200B682BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FBC18920994E4200B682BE /* Assets.xcassets */; };
+		95FBC19020994E4200B682BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FBC18F20994E4200B682BE /* main.m */; };
+		95FBC1C7209960D600B682BE /* FinderSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FBC1C6209960D600B682BE /* FinderSync.m */; };
+		95FBC1CC209960D600B682BE /* SVNFinderSync.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 95FBC1C3209960D600B682BE /* SVNFinderSync.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		95FBC1D12099620600B682BE /* FinderSync.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FBC1D02099620600B682BE /* FinderSync.xcassets */; };
+		95FBC1D42099648B00B682BE /* FinderMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FBC1D32099648B00B682BE /* FinderMenuModel.m */; };
+		95FBC1D720998BE400B682BE /* FinderSyncUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FBC1D620998BE400B682BE /* FinderSyncUtils.m */; };
+		95FBC2962099C09F00B682BE /* FinderSyncUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FBC1D620998BE400B682BE /* FinderSyncUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95FBC1CA209960D600B682BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95FBC17B20994E4000B682BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95FBC1C2209960D600B682BE;
+			remoteInfo = SVNFinderSync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95FBC1B72099599500B682BE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				95FBC1CC209960D600B682BE /* SVNFinderSync.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95FBC2342099A19200B682BE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		950C165620A3E9A300D17957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		950C165820A3EA0500D17957 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		950C165920A3EA0500D17957 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		950C165B20A3EA1900D17957 /* MainWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		950C165C20A3EA1900D17957 /* MainWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		950C165E20A411DB00D17957 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		950C165F20A411DB00D17957 /* QuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
+		950C166020A411DC00D17957 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		950C166420A411F800D17957 /* SSNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNotificationCenter.h; sourceTree = "<group>"; };
+		950C166520A411F800D17957 /* SSPopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPopManager.h; sourceTree = "<group>"; };
+		950C166620A411F800D17957 /* SSNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNotificationCenter.m; sourceTree = "<group>"; };
+		950C166720A411F800D17957 /* SSPopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPopManager.m; sourceTree = "<group>"; };
+		950C166A20A414A400D17957 /* ResultWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultWindowController.h; sourceTree = "<group>"; };
+		950C166B20A414A400D17957 /* ResultWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResultWindowController.m; sourceTree = "<group>"; };
+		950C166C20A414A400D17957 /* ResultWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultWindowController.xib; sourceTree = "<group>"; };
+		953315D42123C35F00F19C13 /* CommitWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitWindowController.h; sourceTree = "<group>"; };
+		953315D52123C35F00F19C13 /* CommitWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommitWindowController.m; sourceTree = "<group>"; };
+		953315D62123C35F00F19C13 /* CommitWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommitWindowController.xib; sourceTree = "<group>"; };
+		953315DA2123C67D00F19C13 /* BaseWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWindowController.h; sourceTree = "<group>"; };
+		953315DB2123C67D00F19C13 /* BaseWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWindowController.m; sourceTree = "<group>"; };
+		954E375C23CDCE8700652AFA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		954E38D623CDD5B700652AFA /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		954E38D723CDD5B700652AFA /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		954E38D823CDD5B700652AFA /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		954E38D923CDD5B700652AFA /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		954E38DA23CDD5B700652AFA /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		954E38DB23CDD5B700652AFA /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		954E38DC23CDD5B700652AFA /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		954E38DD23CDD5B700652AFA /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		954E38DE23CDD5B700652AFA /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		954E38DF23CDD5B700652AFA /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		954E38E023CDD5B700652AFA /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		954E38E123CDD5B700652AFA /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		954E38E223CDD5B700652AFA /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCompatibilityMacros.h; sourceTree = "<group>"; };
+		954E38E323CDD5B700652AFA /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		959767A62477C318004CD14C /* IOSAutoBuildConfigViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSAutoBuildConfigViewController.h; sourceTree = "<group>"; };
+		959767A72477C318004CD14C /* IOSAutoBuildConfigViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSAutoBuildConfigViewController.m; sourceTree = "<group>"; };
+		959767AC2477E20A004CD14C /* NSDate+CategoryKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CategoryKit.h"; sourceTree = "<group>"; };
+		959767AD2477E20B004CD14C /* NSDate+CategoryKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CategoryKit.m"; sourceTree = "<group>"; };
+		95B798CD20A596E6005350F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
+		95FBC18320994E4000B682BE /* SVN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SVN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95FBC18620994E4000B682BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95FBC18720994E4000B682BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95FBC18920994E4200B682BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95FBC18E20994E4200B682BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95FBC18F20994E4200B682BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95FBC19120994E4200B682BE /* SVN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SVN.entitlements; sourceTree = "<group>"; };
+		95FBC1C3209960D600B682BE /* SVNFinderSync.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SVNFinderSync.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		95FBC1C5209960D600B682BE /* FinderSync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinderSync.h; sourceTree = "<group>"; };
+		95FBC1C6209960D600B682BE /* FinderSync.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinderSync.m; sourceTree = "<group>"; };
+		95FBC1C8209960D600B682BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95FBC1C9209960D600B682BE /* SVNFinderSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SVNFinderSync.entitlements; sourceTree = "<group>"; };
+		95FBC1D02099620600B682BE /* FinderSync.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FinderSync.xcassets; sourceTree = "<group>"; };
+		95FBC1D22099648B00B682BE /* FinderMenuModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinderMenuModel.h; sourceTree = "<group>"; };
+		95FBC1D32099648B00B682BE /* FinderMenuModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinderMenuModel.m; sourceTree = "<group>"; };
+		95FBC1D520998BE400B682BE /* FinderSyncUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinderSyncUtils.h; sourceTree = "<group>"; };
+		95FBC1D620998BE400B682BE /* FinderSyncUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinderSyncUtils.m; sourceTree = "<group>"; };
+		95FBC2942099A3AE00B682BE /* svn.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = svn.app; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95FBC18020994E4000B682BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95FBC1C0209960D600B682BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		950C166320A411F800D17957 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				950C166420A411F800D17957 /* SSNotificationCenter.h */,
+				950C166620A411F800D17957 /* SSNotificationCenter.m */,
+				950C166520A411F800D17957 /* SSPopManager.h */,
+				950C166720A411F800D17957 /* SSPopManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		953315D92123C66700F19C13 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				953315DA2123C67D00F19C13 /* BaseWindowController.h */,
+				953315DB2123C67D00F19C13 /* BaseWindowController.m */,
+				959767AC2477E20A004CD14C /* NSDate+CategoryKit.h */,
+				959767AD2477E20B004CD14C /* NSDate+CategoryKit.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		954AF703209BF16C00EB484F /* 通知window */ = {
+			isa = PBXGroup;
+			children = (
+				95B7357921212DCF0085D205 /* view */,
+				950C165E20A411DB00D17957 /* QuestionViewController.h */,
+				950C166020A411DC00D17957 /* QuestionViewController.m */,
+				950C165F20A411DB00D17957 /* QuestionViewController.xib */,
+				950C166A20A414A400D17957 /* ResultWindowController.h */,
+				950C166B20A414A400D17957 /* ResultWindowController.m */,
+				950C166C20A414A400D17957 /* ResultWindowController.xib */,
+				953315D42123C35F00F19C13 /* CommitWindowController.h */,
+				953315D52123C35F00F19C13 /* CommitWindowController.m */,
+				953315D62123C35F00F19C13 /* CommitWindowController.xib */,
+			);
+			path = "通知window";
+			sourceTree = "<group>";
+		};
+		954E375B23CDCE8700652AFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				954E375C23CDCE8700652AFA /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		954E375E23CDD58D00652AFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				954E38D523CDD5B700652AFA /* AFNetworking */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		954E38D523CDD5B700652AFA /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				954E38E223CDD5B700652AFA /* AFCompatibilityMacros.h */,
+				954E38E323CDD5B700652AFA /* AFHTTPSessionManager.h */,
+				954E38DB23CDD5B700652AFA /* AFHTTPSessionManager.m */,
+				954E38DF23CDD5B700652AFA /* AFNetworking.h */,
+				954E38D723CDD5B700652AFA /* AFNetworkReachabilityManager.h */,
+				954E38E023CDD5B700652AFA /* AFNetworkReachabilityManager.m */,
+				954E38D623CDD5B700652AFA /* AFSecurityPolicy.h */,
+				954E38E123CDD5B700652AFA /* AFSecurityPolicy.m */,
+				954E38D923CDD5B700652AFA /* AFURLRequestSerialization.h */,
+				954E38DE23CDD5B700652AFA /* AFURLRequestSerialization.m */,
+				954E38DC23CDD5B700652AFA /* AFURLResponseSerialization.h */,
+				954E38DA23CDD5B700652AFA /* AFURLResponseSerialization.m */,
+				954E38D823CDD5B700652AFA /* AFURLSessionManager.h */,
+				954E38DD23CDD5B700652AFA /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		959767A42477C2A8004CD14C /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				959767A52477C2C2004CD14C /* 打包配置 */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		959767A52477C2C2004CD14C /* 打包配置 */ = {
+			isa = PBXGroup;
+			children = (
+				959767A62477C318004CD14C /* IOSAutoBuildConfigViewController.h */,
+				959767A72477C318004CD14C /* IOSAutoBuildConfigViewController.m */,
+			);
+			path = "打包配置";
+			sourceTree = "<group>";
+		};
+		95B7357921212DCF0085D205 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		95FBC17A20994E4000B682BE = {
+			isa = PBXGroup;
+			children = (
+				95FBC18520994E4000B682BE /* SVN */,
+				95FBC1C4209960D600B682BE /* SVNFinderSync */,
+				95FBC18420994E4000B682BE /* Products */,
+				954E375B23CDCE8700652AFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95FBC18420994E4000B682BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95FBC18320994E4000B682BE /* SVN.app */,
+				95FBC1C3209960D600B682BE /* SVNFinderSync.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95FBC18520994E4000B682BE /* SVN */ = {
+			isa = PBXGroup;
+			children = (
+				953315D92123C66700F19C13 /* Base */,
+				959767A42477C2A8004CD14C /* Page */,
+				950C166320A411F800D17957 /* Manager */,
+				954AF703209BF16C00EB484F /* 通知window */,
+				95FBC18620994E4000B682BE /* AppDelegate.h */,
+				95FBC18720994E4000B682BE /* AppDelegate.m */,
+				950C165820A3EA0500D17957 /* MainViewController.h */,
+				950C165920A3EA0500D17957 /* MainViewController.m */,
+				950C165B20A3EA1900D17957 /* MainWindowController.h */,
+				950C165C20A3EA1900D17957 /* MainWindowController.m */,
+				950C165520A3E9A300D17957 /* Main.storyboard */,
+				95B798CC20A596E6005350F5 /* Setting.storyboard */,
+				95FBC18920994E4200B682BE /* Assets.xcassets */,
+				954E375E23CDD58D00652AFA /* Frameworks */,
+				95FBC18E20994E4200B682BE /* Info.plist */,
+				95FBC18F20994E4200B682BE /* main.m */,
+				95FBC19120994E4200B682BE /* SVN.entitlements */,
+			);
+			path = SVN;
+			sourceTree = "<group>";
+		};
+		95FBC1C4209960D600B682BE /* SVNFinderSync */ = {
+			isa = PBXGroup;
+			children = (
+				95FBC1D22099648B00B682BE /* FinderMenuModel.h */,
+				95FBC1D32099648B00B682BE /* FinderMenuModel.m */,
+				95FBC1C5209960D600B682BE /* FinderSync.h */,
+				95FBC1C6209960D600B682BE /* FinderSync.m */,
+				95FBC1D520998BE400B682BE /* FinderSyncUtils.h */,
+				95FBC1D620998BE400B682BE /* FinderSyncUtils.m */,
+				95FBC1C8209960D600B682BE /* Info.plist */,
+				95FBC1C9209960D600B682BE /* SVNFinderSync.entitlements */,
+				95FBC1D02099620600B682BE /* FinderSync.xcassets */,
+				95FBC2942099A3AE00B682BE /* svn.app */,
+			);
+			path = SVNFinderSync;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95FBC18220994E4000B682BE /* SVN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95FBC19420994E4200B682BE /* Build configuration list for PBXNativeTarget "SVN" */;
+			buildPhases = (
+				95FBC17F20994E4000B682BE /* Sources */,
+				95FBC18020994E4000B682BE /* Frameworks */,
+				95FBC18120994E4000B682BE /* Resources */,
+				95FBC1B72099599500B682BE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95FBC1CB209960D600B682BE /* PBXTargetDependency */,
+			);
+			name = SVN;
+			productName = SVN;
+			productReference = 95FBC18320994E4000B682BE /* SVN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95FBC1C2209960D600B682BE /* SVNFinderSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95FBC1CD209960D600B682BE /* Build configuration list for PBXNativeTarget "SVNFinderSync" */;
+			buildPhases = (
+				95FBC1BF209960D600B682BE /* Sources */,
+				95FBC1C0209960D600B682BE /* Frameworks */,
+				95FBC1C1209960D600B682BE /* Resources */,
+				95FBC2342099A19200B682BE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVNFinderSync;
+			productName = SVNFinderSync;
+			productReference = 95FBC1C3209960D600B682BE /* SVNFinderSync.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95FBC17B20994E4000B682BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = xujun;
+				TargetAttributes = {
+					95FBC18220994E4000B682BE = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					95FBC1C2209960D600B682BE = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 95FBC17E20994E4000B682BE /* Build configuration list for PBXProject "SVN" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95FBC17A20994E4000B682BE;
+			productRefGroup = 95FBC18420994E4000B682BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95FBC18220994E4000B682BE /* SVN */,
+				95FBC1C2209960D600B682BE /* SVNFinderSync */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95FBC18120994E4000B682BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953315D82123C35F00F19C13 /* CommitWindowController.xib in Resources */,
+				950C166E20A414A400D17957 /* ResultWindowController.xib in Resources */,
+				950C165720A3E9A400D17957 /* Main.storyboard in Resources */,
+				9554A60520A54DCD000F17A6 /* svn.app in Resources */,
+				950C166120A411DC00D17957 /* QuestionViewController.xib in Resources */,
+				95FBC18A20994E4200B682BE /* Assets.xcassets in Resources */,
+				95B798CE20A596E6005350F5 /* Setting.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95FBC1C1209960D600B682BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95FBC1D12099620600B682BE /* FinderSync.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95FBC17F20994E4000B682BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954E38E623CDD5B700652AFA /* AFURLSessionManager.m in Sources */,
+				953315D72123C35F00F19C13 /* CommitWindowController.m in Sources */,
+				954E38E823CDD5B700652AFA /* AFNetworkReachabilityManager.m in Sources */,
+				950C165A20A3EA0500D17957 /* MainViewController.m in Sources */,
+				954AF702209AC0DD00EB484F /* FinderMenuModel.m in Sources */,
+				950C166D20A414A400D17957 /* ResultWindowController.m in Sources */,
+				950C165D20A3EA1900D17957 /* MainWindowController.m in Sources */,
+				954E38E523CDD5B700652AFA /* AFHTTPSessionManager.m in Sources */,
+				950C166220A411DC00D17957 /* QuestionViewController.m in Sources */,
+				959767A82477C318004CD14C /* IOSAutoBuildConfigViewController.m in Sources */,
+				95FBC19020994E4200B682BE /* main.m in Sources */,
+				950C166920A411F900D17957 /* SSPopManager.m in Sources */,
+				954E38E423CDD5B700652AFA /* AFURLResponseSerialization.m in Sources */,
+				953315DC2123C67D00F19C13 /* BaseWindowController.m in Sources */,
+				95FBC2962099C09F00B682BE /* FinderSyncUtils.m in Sources */,
+				95FBC18820994E4000B682BE /* AppDelegate.m in Sources */,
+				950C166820A411F900D17957 /* SSNotificationCenter.m in Sources */,
+				959767AE2477E20B004CD14C /* NSDate+CategoryKit.m in Sources */,
+				954E38E923CDD5B700652AFA /* AFSecurityPolicy.m in Sources */,
+				954E38E723CDD5B700652AFA /* AFURLRequestSerialization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95FBC1BF209960D600B682BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95FBC1D720998BE400B682BE /* FinderSyncUtils.m in Sources */,
+				95FBC1D42099648B00B682BE /* FinderMenuModel.m in Sources */,
+				95FBC1C7209960D600B682BE /* FinderSync.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95FBC1CB209960D600B682BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95FBC1C2209960D600B682BE /* SVNFinderSync */;
+			targetProxy = 95FBC1CA209960D600B682BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		950C165520A3E9A300D17957 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				950C165620A3E9A300D17957 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95B798CC20A596E6005350F5 /* Setting.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95B798CD20A596E6005350F5 /* Base */,
+			);
+			name = Setting.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95FBC19220994E4200B682BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6BUARZWS4T;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		95FBC19320994E4200B682BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6BUARZWS4T;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		95FBC19520994E4200B682BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SVN/SVN.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20190511;
+				DEVELOPMENT_TEAM = 6BUARZWS4T;
+				INFOPLIST_FILE = SVN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SVN/Frameworks/MailCore/lib",
+				);
+				MARKETING_VERSION = 1.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xujun.svn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		95FBC19620994E4200B682BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SVN/SVN.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20190511;
+				DEVELOPMENT_TEAM = 6BUARZWS4T;
+				INFOPLIST_FILE = SVN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SVN/Frameworks/MailCore/lib",
+				);
+				MARKETING_VERSION = 1.8;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xujun.svn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		95FBC1CE209960D600B682BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SVNFinderSync/SVNFinderSync.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20180511;
+				DEVELOPMENT_TEAM = 6BUARZWS4T;
+				INFOPLIST_FILE = SVNFinderSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xujun.svn.FinderSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		95FBC1CF209960D600B682BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SVNFinderSync/SVNFinderSync.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20180511;
+				DEVELOPMENT_TEAM = 6BUARZWS4T;
+				INFOPLIST_FILE = SVNFinderSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xujun.svn.FinderSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95FBC17E20994E4000B682BE /* Build configuration list for PBXProject "SVN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95FBC19220994E4200B682BE /* Debug */,
+				95FBC19320994E4200B682BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95FBC19420994E4200B682BE /* Build configuration list for PBXNativeTarget "SVN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95FBC19520994E4200B682BE /* Debug */,
+				95FBC19620994E4200B682BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95FBC1CD209960D600B682BE /* Build configuration list for PBXNativeTarget "SVNFinderSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95FBC1CE209960D600B682BE /* Debug */,
+				95FBC1CF209960D600B682BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95FBC17B20994E4000B682BE /* Project object */;
+}

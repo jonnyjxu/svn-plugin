@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="7P8-Td-Y2J">
+            <objects>
+                <customObject id="8YC-wD-Ka7" customClass="AppDelegate"/>
+                <customObject id="wmM-fC-SQ2" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <application id="Whi-DQ-UAg" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="He1-IL-AYw">
+                        <items>
+                            <menuItem title="svn插件" id="IGX-46-42x">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="svn插件" systemMenu="apple" id="DDF-tV-ytD">
+                                    <items>
+                                        <menuItem title="About svn插件" id="rbY-uz-0iR">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="8YC-wD-Ka7" id="Dsl-CE-xHm"/>
+                    </connections>
+                </application>
+            </objects>
+            <point key="canvasLocation" x="-223" y="-747"/>
+        </scene>
+    </scenes>
+</document>
